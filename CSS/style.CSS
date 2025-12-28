@@ -322,7 +322,7 @@ section {
 }
 
 /* ===================================
-   OBJECTIFS PÉDAGOGIQUES
+   OBJECTIFS PÉDAGOGIQUES - NUMÉROS EN COULEUR
    =================================== */
 .objectifs-grid {
     display: grid;
@@ -343,12 +343,59 @@ section {
     border-left-color: var(--color-secondary);
 }
 
+/* MODIFICATION ICI - Numéros avec couleurs différentes */
 .objectif-number {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
-    color: var(--color-primary);
-    opacity: 0.3;
+    opacity: 1;
     margin-bottom: var(--spacing-sm);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Couleurs alternées pour chaque numéro */
+.objectif-item:nth-child(1) .objectif-number {
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.objectif-item:nth-child(2) .objectif-number {
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.objectif-item:nth-child(3) .objectif-number {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.objectif-item:nth-child(4) .objectif-number {
+    background: linear-gradient(135deg, #10b981, #34d399);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.objectif-item:nth-child(5) .objectif-number {
+    background: linear-gradient(135deg, #ef4444, #f87171);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.objectif-item:nth-child(6) .objectif-number {
+    background: linear-gradient(135deg, #ec4899, #f472b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .objectif-item h3 {
@@ -681,3 +728,4 @@ section {
     .inscription-form {
         padding: var(--spacing-lg);
     }
+}
