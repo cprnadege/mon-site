@@ -679,4 +679,6 @@ section {
     
     /* Formulaire */
     .inscription-form {
-        padding: var(--
+        padding: var(--spading-lg)
+    }
+
